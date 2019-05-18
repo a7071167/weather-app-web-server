@@ -13,6 +13,7 @@ weatherFofm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
+    //123
     fetch('http://localhost:3000/weather?address=' + location).then((response) => {
     response.json().then((data) => {
         if (data.error) {
